@@ -38,7 +38,7 @@ class Application
       @@cart.collect do |item|
         "#{item}\n"
         binding.pry
-      test
+      end
     end
   end  
   
