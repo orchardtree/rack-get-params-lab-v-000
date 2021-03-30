@@ -1,3 +1,4 @@
+require 'pry'
 class Application
 
   @@cart = []
@@ -34,9 +35,9 @@ class Application
     if @@cart.empty?
       return "Your cart is empty"
     else
-      test = @@cart.collect do |item|
+      @@cart.collect do |item|
         "#{item}\n"
-      end
+        binding.pry
       test
     end
   end  
