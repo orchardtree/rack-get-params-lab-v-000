@@ -41,6 +41,7 @@ class Application
   
   def handle_add(item)
     if @@items.include?(item)
+      @@cart << item
       "added #{item}"
     else
       "We don't have that item"
