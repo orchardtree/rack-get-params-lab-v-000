@@ -35,10 +35,7 @@ class Application
     if @@cart.empty?
       "Your cart is empty"
     else
-      c = @@cart.collect do |item|
-        "#{item}\n"
-      end
-      c.join
+      @@cart.collect {|item| "#{item}\n"}.join
     end
   end  
   
