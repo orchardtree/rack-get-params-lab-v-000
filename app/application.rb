@@ -42,7 +42,6 @@ class Application
   def handle_add(item)
     if @@items.include?(item)
       "added #{item}"
-      binding.pry
     else
       "We don't have that item"
     end
