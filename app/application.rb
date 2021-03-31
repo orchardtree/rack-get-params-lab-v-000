@@ -33,12 +33,13 @@ class Application
   
   def handle_cart
     if @@cart.empty?
-      return "Your cart is empty"
+      test = "Your cart is empty"
     else
-      @@cart.collect do |item|
+      test = @@cart.collect do |item|
         "#{item}\n"
       end
     end
+    test
             binding.pry
   end  
   
