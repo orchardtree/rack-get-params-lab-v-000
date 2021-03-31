@@ -37,9 +37,9 @@ class Application
     else
       @@cart.collect do |item|
         "#{item}\n"
-        binding.pry
       end
     end
+            binding.pry
   end  
   
   def handle_add(item)
